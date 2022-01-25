@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(160, 185, 233);
+  background-image: linear-gradient(to right, rgb(201, 103, 103),rgb(253, 215, 145),rgb(252, 252, 207),rgb(111, 158, 111),rgb(102, 102, 236),rgb(112, 94, 124),rgb(212, 179, 212));
+  width: 100%;
   font-weight: 300;
   font-family: "Arvo";
   letter-spacing: 0.05em;
@@ -12,11 +13,11 @@ header {
   max-height: 100px;
   justify-content: center;
 }
+
 header img {
   display:flex;
   border-radius: 25px;
   border: 0.5mm solid black;
-
 }
 
 h1 {
@@ -26,11 +27,11 @@ h1 {
   flex-wrap: wrap;
   text-align: center;
   padding: 15px;
- 
+
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 140%;
   font-weight: bold;
   font-family: "Lobster", sans-serif;
 }
@@ -45,6 +46,9 @@ nav {
   justify-content: space-evenly;
 }
 
+nav li:hover {
+  font-size: 120%;
+}
 
 .movie:hover {
 	content: "Go To Your Movie - a location-based movie search tool";
