@@ -1,15 +1,21 @@
 body {
   background-image: linear-gradient(to right, rgb(201, 103, 103),rgb(253, 215, 145),rgb(252, 252, 207),rgb(111, 158, 111),rgb(102, 102, 236),rgb(112, 94, 124),rgb(212, 179, 212));
-  width: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 300;
   font-family: "Arvo";
   letter-spacing: 0.05em;
+  line-height: 1.5;
 }
   
 header {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   padding: 15px;
-  margin: 20px;
+  /* margin: 20px; */
   max-height: 100px;
   justify-content: center;
 }
@@ -59,22 +65,28 @@ nav li:hover {
   font-size: 120%;
 }
 
-.movie:hover {
-	content: "Go To Your Movie - a location-based movie search tool";
+#movie:hover {
+  	content: "Go To Your Movie - a location-based movie search tool";
 }
 
-.weather:hover {
+#weather:hover {
 	content: "A searchable weather dashboard powered by OpenWeather";
 }
 
-.scheduler:hover {
+#scheduler:hover {
 	content: "A workday scheduler";
+}
+
+.icon {
+  width: 30%;
+  position: relative;  
 }
 
 .Mainbox {
   display : flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 nav a {
@@ -83,7 +95,7 @@ nav a {
 }
 
 .section {
-  width:auto;
+  width: auto;
   margin: 1%;
   padding: 1%;
 }
@@ -101,25 +113,27 @@ nav a {
 }*/
 
 #Work img {
-  width: 30%;
-  height: auto;
+  width: 75%;
+  height: 75%;
   margin: 1%;
   padding: 2%;
+  object-fit:;
   justify-content:space-evenly;
 }
 
 #Work img:hover {
-  width: 38%;
+  width: 80%;
+  height: 80%;
   box-shadow: 25% 25% 25% slategrey;
 }
 
 .Mainbox img:focus {
-  width: 33%;
+  width: 100%;
   box-shadow: 25% 25% 25% pink;
 }
 
 .Mainbox img:active {
-  width: 33%;
+  width: 100%;
   box-shadow: 25% 25% 25% yellowgreen
 }
 
@@ -148,6 +162,7 @@ Footer {
     text-align: center;
 }
 
+/*
 @media screen and (min-width: 901px) {
 	nav {
 		display:flex;
@@ -178,3 +193,4 @@ Footer {
 
   }
 }
+*/
