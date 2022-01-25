@@ -27,7 +27,6 @@ h1 {
   flex-wrap: wrap;
   text-align: center;
   padding: 15px;
-
 }
 
 h2 {
@@ -80,9 +79,8 @@ nav a {
 
 .section {
   width:auto;
-  margin: 3%;
-  padding: 3%;
-  display: flex;
+  margin: 1%;
+  padding: 1%;
 }
 
 .myClass {
@@ -91,11 +89,11 @@ nav a {
 	background-color: rbg (255,255);
 }
 
-#About-Me {
+/*#About-Me {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
+}*/
 
 #Work img {
   width: 30%;
@@ -103,7 +101,6 @@ nav a {
   margin: 1%;
   padding: 2%;
   justify-content:space-evenly;
-
 }
 
 #Work img:hover {
