@@ -40,6 +40,11 @@ nav {
   padding: 2%;
   font-weight: bold;
   justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.section {
+  border-bottom: 1px solid black;
 }
 
 nav ul {
