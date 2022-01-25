@@ -1,26 +1,36 @@
+body {
+  background-color: rgb(160, 185, 233);
+  font-weight: 300;
+  font-family: ;
+  letter-spacing: 0.05em;
+}
+  
 header {
   display: flex;
   padding: 15px;
   margin: 20px;
-  background-color: cornflowerblue;
   max-height: 100px;
-  border: 2px solid black;
-  width:100%;
 }
-H1 {
-  font-size: 300%;
+
+h1 {
+  font-size: 500%;
   margin-left: 2%;
   font-style: italic;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Lobster", sans-serif;
   flex-wrap: wrap;
   text-align: center;
   padding: 15px;
  
 }
 
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Lobster", sans-serif;
+}
+
 nav {
-  align-items: right;
-  width: auto;
+  align-items: right; 
   margin-left: 10%;
   padding: 1%;
   font-weight: bold;
@@ -29,8 +39,7 @@ nav {
   justify-content: space-between;
 }
 
-nav li {
-  float: left;
+nav li {  
   display: inline;
   align-items: center;
 }
@@ -50,37 +59,7 @@ nav li {
 .Mainbox {
   display : flex;
   flex-direction: row;
-}
-
-@media screen and (min-width: 901px) {
-	nav {
-		display:flex;
-    flex-wrap: wrap;
-	}	
-}
-
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  nav {
-		display:flex;
-    flex-wrap: wrap;
-	}	
-  .Mainbox a {
-    min-width: 425px;
-    max-width: 850px;
-
-  }
-}
-
-@media screen and (max-width: 699px) {
-  nav {
-		display:flex;
-    flex-wrap: wrap;
-	}	
-  .Mainbox a {
-    min-width: 400px;
-    max-width: 650px;
-
-  }
+  flex-wrap: nowrap;
 }
 
 nav a {
@@ -88,26 +67,11 @@ nav a {
   text-decoration: none;
 }
 
-
-p {
-  margin: 2%;
-}
-
-body {
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-
-body > h2 {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
 .section {
   width:auto;
   margin: 3%;
   padding: 3%;
-  /* border: 2px solid black; */
+  display: flex;
 }
 
 #About-Me {
@@ -115,7 +79,6 @@ body > h2 {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 #Work img {
   width: 30%;
@@ -127,17 +90,17 @@ body > h2 {
 }
 
 #Work img:hover {
-  width: 45%;
+  width: 38%;
   box-shadow: 25% 25% 25% slategrey;
 }
 
 .Mainbox img:focus {
-  width: 35%;
+  width: 33%;
   box-shadow: 25% 25% 25% pink;
 }
 
 .Mainbox img:active {
-  width: 35%;
+  width: 33%;
   box-shadow: 25% 25% 25% yellowgreen
 }
 
@@ -155,17 +118,44 @@ body > h2 {
   text-decoration: none;
 }
 
-
 #Resume a {
  color: black;
 }
-
 
 Footer {
     margin: 3%;
     padding: 3%;
     font-size: 20px;
-    font-weight: bold;
     text-align: center;
-    background-color: cornflowerblue;
+}
+
+@media screen and (min-width: 901px) {
+	nav {
+		display:flex;
+    flex-wrap: nowrap;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  nav {
+		display:flex;
+    flex-wrap: nowrap;
+	}	
+  .Mainbox a {
+    min-width: 425px;
+    max-width: 850px;
+
+  }
+}
+
+@media screen and (max-width: 699px) {
+  nav {
+		display:flex;
+    flex-wrap: nowrap;
+	}	
+  .Mainbox a {
+    min-width: 400px;
+    max-width: 650px;
+
+  }
 }
