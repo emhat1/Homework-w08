@@ -1,7 +1,7 @@
 body {
   background-color: rgb(160, 185, 233);
   font-weight: 300;
-  font-family: ;
+  font-family: "Arvo";
   letter-spacing: 0.05em;
 }
   
@@ -10,6 +10,12 @@ header {
   padding: 15px;
   margin: 20px;
   max-height: 100px;
+  justify-content: center;
+}
+header img {
+  display:flex;
+  border-radius: 25px;
+
 }
 
 h1 {
@@ -30,17 +36,17 @@ h2 {
 }
 
 nav {
+  display:flex;
   align-items: right; 
-  margin-left: 10%;
   padding: 1%;
   font-weight: bold;
   font-size: 100%;
-  text-align: center;
   justify-content: space-between;
 }
 
 nav li {  
   display: inline;
+  margin: 10%;
   align-items: center;
 }
 
@@ -72,6 +78,12 @@ nav a {
   margin: 3%;
   padding: 3%;
   display: flex;
+}
+
+.myClass {
+	height: 100px;
+	width: 100px;
+	background-color: rbg (255,255);
 }
 
 #About-Me {
